@@ -5,13 +5,13 @@
   tags:
   - CMAccessRequisitions
   - CMAccessQM
-  - RMCAccessCommand
   - CMAccessAlpha
   - CMAccessBravo
   - CMAccessCharlie
   - CMAccessDelta
   - CMAccessMarinePrep
   - RMCAccessDatabase
+  - RMCAccessSeniorCommand
 
 - type: accessGroup
   id: CMCargoTech

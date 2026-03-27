@@ -6,6 +6,7 @@ cm-access-colony-brig = Colony Brig
 cm-access-colony-medbay = Colony Medbay
 cm-access-colony-command = Colony Command
 rmc-access-colony-armory = Colony Armory
+rmc-access-colony-chem = Colony Chem
 
 rmc-access-tsepa = TSEPA
 rmc-access-tsepa-brig = TSEPA Brig

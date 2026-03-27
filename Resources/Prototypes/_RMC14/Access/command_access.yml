@@ -53,6 +53,16 @@
   parent: RMCBaseCommandAccess
   name: Senior Command
 
+- type: accessLevel
+  id: CMAccessXO
+  parent: RMCBaseHidden
+  name: cm-job-name-executive-officer
+
+- type: accessLevel
+  id: CMAccessIO
+  parent: RMCBaseCommandAccess
+  name: cm-job-name-intel
+
 # Admin only.
 - type: accessLevel
   id: CMAccessHighCommand

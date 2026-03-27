@@ -28,6 +28,7 @@
     - CMAccessColonyChem
     # Resources/Prototypes/_RMC14/Access/command_access.yml
     - RMCAccessCommand
+    - RMCAccessSeniorCommand
     - CMAccessCMP
     - CMAccessQM
     - CMAccessSEA
@@ -35,7 +36,9 @@
     - CMAccessCMO
     - CMAccessCE
     - CMAccessASO
-    - CMAccessCorp
+    - CMAccessXO
+    - CMAccessIO
+    - RMCAccessWeYa
     - CMAccessHighCommand
     # Resources/Prototypes/_RMC14/Access/dropship_access.yml
     - CMAccessDropship

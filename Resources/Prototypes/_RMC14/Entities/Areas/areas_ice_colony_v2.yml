@@ -1,0 +1,1218 @@
+- type: entity
+  parent: RMCAreaBase
+  id: RMCAreaIceV2
+  name: Ice Colony
+  suffix: Ice V2 Area
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas_ice_colony_v2.rsi
+    state: ice_colony
+  - type: Area
+    buildSpecial: true
+    powerNet: ground
+    minimapColor: '#6C6767D8'
+
+- type: entity
+  parent: RMCAreaIceV2
+  id: RMCAreaIceV2Exterior
+  name: Ice Colony - Exterior Surface
+  components:
+  - type: Sprite
+    state: barrens0
+  - type: Area
+    CAS: true
+    fulton: true
+    mortarPlacement: true
+    mortarFire: true
+    lasing: true
+    medevac: true
+    paradropping: true
+    OB: true
+    supplyDrop: true
+    minimapColor: '#EBE5E5E3'
+
+- type: entity
+  parent: RMCAreaIceV2
+  id: RMCAreaIceV2Interior
+  name: Ice Colony - Interior
+  components:
+  - type: Sprite
+    state: hangars0
+  - type: Area
+    CAS: true
+    fulton: false
+    mortarPlacement: false
+    mortarFire: false
+    lasing: false
+    medevac: false
+    paradropping: false
+    OB: true
+    supplyDrop: false
+    weatherEnabled: false
+
+- type: entity
+  parent: RMCAreaIceV2
+  id: RMCAreaIceV2Underground
+  name: Ice Colony - Underground
+  components:
+  - type: Sprite
+    state: caves0
+  - type: Area
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    paradropping: false
+    OB: true
+    supplyDrop: false
+    weatherEnabled: false
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorOob
+  name: Ice Colony - Out Of Bounds
+  components:
+  - type: Sprite
+    state: oob
+  - type: Area
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    paradropping: false
+    OB: false
+    supplyDrop: false
+    resinAllowed: false
+    avoidBioscan: false
+    noTunnel: true
+    unweedable: true
+    weatherEnabled: false
+
+- type: entity
+  parent: RMCAreaShuttleDrop1
+  id: RMCAreaShuttleDrop1IceV2
+  name: Ice Colony - Dropship Alamo Landing Zone
+  suffix: Ice V2 Area
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas_ice_colony_v2.rsi
+    state: shuttle
+  - type: Area
+    linkedLz: dropship_lz1
+    minimapColor: '#EBE5E5E3'
+    weatherEnabled: true
+
+- type: entity
+  parent: RMCAreaShuttleDrop2
+  id: RMCAreaShuttleDrop2IceV2
+  name: Ice Colony - Dropship Normandy Landing Zone
+  suffix: Ice V2 Area
+  components:
+  - type: Sprite
+    sprite: _RMC14/Areas/areas_ice_colony_v2.rsi
+    state: shuttle2
+  - type: Area
+    linkedLz: dropship_lz2
+    minimapColor: '#EBE5E5E3'
+    weatherEnabled: true
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorLz1Console
+  name: Ice Colony - Dropship Alamo Console
+  components:
+  - type: Area
+    minimapColor: '#EBE5E5E3'
+    alwaysPowered: true
+
+- type: entity
+  parent: RMCAreaIceV2ExteriorLz1Console
+  id: RMCAreaIceV2ExteriorLz1ConsoleTwo
+  name: Ice Colony - Dropship Normandy Console
+  components:
+  - type: Area
+    minimapColor: '#EBE5E5E3'
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorLz1Lazarus
+  name: Ice Colony - LZ1 'Lazarus'
+  components:
+  - type: Sprite
+    state: landing_valley
+  - type: Area
+    linkedLz: dropship_lz1
+    landingZone: true
+    minimapColor: '#EBE5E5E3'
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorLz2Underground
+  name: Ice Colony - LZ2 'Underground'
+  components:
+  - type: Sprite
+    state: lz2_fortress
+  - type: Area
+    linkedLz: dropship_lz2
+    landingZone: true
+    minimapColor: '#EBE5E5E3'
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorEmergencyLandingPad
+  name: Emergency Landing Pad
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorAerodromeLandingValley
+  name: Aerodrome Landing Valley
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorAerodromeContainerYard
+  name: Aerodrome Container Yard
+  components:
+  - type: Sprite
+    state: junkyard0
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorIceCliffsValley
+  name: Ice Cliffs Valley
+  components:
+  - type: Sprite
+    state: barrens1
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorNorthernValleys
+  name: Northern Valleys
+  components:
+  - type: Sprite
+    state: barrens2
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorNorthEasternValleys
+  name: North Eastern Valleys
+  components:
+  - type: Sprite
+    state: barrens3
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorNorthWesternValleys
+  name: North Western Valleys
+  components:
+  - type: Sprite
+    state: barrens4
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorWesternValleys
+  name: Western Valleys
+  components:
+  - type: Sprite
+    state: barrens1
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorSouthernValleys
+  name: Southern Valleys
+  components:
+  - type: Sprite
+    state: barrens2
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorSouthernValleysExcavationSite
+  name: Southern Valleys Excavation Site
+  components:
+  - type: Sprite
+    state: barrens3
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorEasternValleys
+  name: Eastern Valleys
+  components:
+  - type: Sprite
+    state: barrens4
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorSouthWesternValleys
+  name: South Western Valleys
+  components:
+  - type: Sprite
+    state: barrens1
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorIceColonyClearing
+  name: Ice Colony Clearing
+  components:
+  - type: Sprite
+    state: barrens2
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorColonyCentralValley
+  name: Colony Central Valley
+  components:
+  - type: Sprite
+    state: barrens3
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorColonySouthernClearing
+  name: Colony Southern Clearing
+  components:
+  - type: Sprite
+    state: barrens4
+
+- type: entity
+  parent: RMCAreaIceV2Exterior
+  id: RMCAreaIceV2ExteriorColonyNorthernClearing
+  name: Colony Northern Clearing
+  components:
+  - type: Sprite
+    state: barrens1
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorAntiFreezeBar
+  name: Anti Freeze Bar
+  components:
+  - type: Sprite
+    state: bar0
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorAntiFreezeCanteen
+  name: Anti Freeze Canteen
+  components:
+  - type: Sprite
+    state: bar1
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorAuroraMedicalClinic
+  name: Aurora Medical Clinic
+  components:
+  - type: Sprite
+    state: res0
+
+- type: entity
+  parent: RMCAreaIceV2InteriorAuroraMedicalClinic
+  id: RMCAreaIceV2InteriorAuroraMedicalClinicLobby
+  name: Aurora Medical Clinic Lobby
+  components:
+  - type: Sprite
+    state: res1
+
+- type: entity
+  parent: RMCAreaIceV2InteriorAuroraMedicalClinic
+  id: RMCAreaIceV2InteriorAuroraMedicalClinicTreatment
+  name: Aurora Medical Clinic Treatment
+  components:
+  - type: Sprite
+    state: res2
+
+- type: entity
+  parent: RMCAreaIceV2InteriorAuroraMedicalClinic
+  id: RMCAreaIceV2InteriorAuroraMedicalClinicStorage
+  name: Aurora Medical Clinic Storage
+  components:
+  - type: Sprite
+    state: res3
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorColonyAdministration
+  name: Colony Administration
+  components:
+  - type: Sprite
+    state: hangars0
+
+- type: entity
+  parent: RMCAreaIceV2InteriorColonyAdministration
+  id: RMCAreaIceV2InteriorColonyAdministrationSecurityCheckpoint
+  name: Colony Administration Security Checkpoint
+  components:
+  - type: Sprite
+    state: hangars1
+
+- type: entity
+  parent: RMCAreaIceV2InteriorColonyAdministration
+  id: RMCAreaIceV2InteriorColonyControlCenter
+  name: Colony Control Center
+  components:
+  - type: Sprite
+    state: hangars2
+
+- type: entity
+  parent: RMCAreaIceV2InteriorColonyAdministration
+  id: RMCAreaIceV2InteriorColonyControlCentralOffice
+  name: Colony Control Central Office
+  components:
+  - type: Sprite
+    state: hangars3
+
+- type: entity
+  parent: RMCAreaIceV2InteriorColonyAdministration
+  id: RMCAreaIceV2InteriorColonyControlPrivateOfficeWest
+  name: Colony Control Private Office West
+  components:
+  - type: Sprite
+    state: hangars4
+
+- type: entity
+  parent: RMCAreaIceV2InteriorColonyAdministration
+  id: RMCAreaIceV2InteriorColonyControlPrivateOfficeEast
+  name: Colony Control Private Office East
+  components:
+  - type: Sprite
+    state: hangars1
+
+- type: entity
+  parent: RMCAreaIceV2InteriorColonyAdministration
+  id: RMCAreaIceV2InteriorColonyCrisisRoom
+  name: Colony Crisis Room
+  components:
+  - type: Sprite
+    state: hangars2
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorSurfaceDisposals
+  name: Surface Disposals
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorDormitories
+  name: Dormitories
+  components:
+  - type: Sprite
+    state: bar1
+
+- type: entity
+  parent: RMCAreaIceV2InteriorDormitories
+  id: RMCAreaIceV2InteriorDormitoriesCanteen
+  name: Dormitories Canteen
+  components:
+  - type: Sprite
+    state: bar2
+
+- type: entity
+  parent: RMCAreaIceV2InteriorDormitories
+  id: RMCAreaIceV2InteriorDormitoriesLavatory
+  name: Dormitories Lavatory
+  components:
+  - type: Sprite
+    state: bar3
+
+- type: entity
+  parent: RMCAreaIceV2InteriorDormitories
+  id: RMCAreaIceV2InteriorDormitoriesWestRestroom
+  name: Dormitories West Restroom
+  components:
+  - type: Sprite
+    state: bar4
+
+- type: entity
+  parent: RMCAreaIceV2InteriorDormitories
+  id: RMCAreaIceV2InteriorDormitoriesEastRestroom
+  name: Dormitories East Restroom
+  components:
+  - type: Sprite
+    state: bar0
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorEngineering
+  name: Engineering
+  components:
+  - type: Sprite
+    state: junkyard0
+
+- type: entity
+  parent: RMCAreaIceV2InteriorEngineering
+  id: RMCAreaIceV2InteriorEngineeringGeneratorRoom
+  name: Engineering Generator Room
+  components:
+  - type: Sprite
+    state: junkyard1
+
+- type: entity
+  parent: RMCAreaIceV2InteriorEngineering
+  id: RMCAreaIceV2InteriorEngineeringElectricStorage
+  name: Engineering Electric Storage
+  components:
+  - type: Sprite
+    state: junkyard2
+
+- type: entity
+  parent: RMCAreaIceV2InteriorEngineering
+  id: RMCAreaIceV2InteriorEngineeringToolStorage
+  name: Engineering Tool Storage
+  components:
+  - type: Sprite
+    state: junkyard3
+
+- type: entity
+  parent: RMCAreaIceV2InteriorEngineering
+  id: RMCAreaIceV2InteriorSurfacePowerSubstation
+  name: Surface Power Substation
+  components:
+  - type: Sprite
+    state: junkyard0
+
+- type: entity
+  parent: RMCAreaIceV2InteriorEngineering
+  id: RMCAreaIceV2InteriorSurfacePowerSubstationSMES
+  name: Surface Power Substation SMES
+  components:
+  - type: Sprite
+    state: junkyard0
+
+- type: entity
+  parent: RMCAreaIceV2InteriorEngineering
+  id: RMCAreaIceV2InteriorColonyTelecommunications
+  name: Colony Telecommunications
+  components:
+  - type: Sprite
+    state: junkyard1
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorExcavationOutpost
+  name: Excavation Outpost
+  components:
+  - type: Sprite
+    state: res1
+
+- type: entity
+  parent: RMCAreaIceV2InteriorExcavationOutpost
+  id: RMCAreaIceV2InteriorExcavationOutpostExternalStorage
+  name: Excavation Outpost External Storage
+  components:
+  - type: Sprite
+    state: res2
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorGarage
+  name: Garage
+  components:
+  - type: Sprite
+    state: junkyard1
+
+- type: entity
+  parent: RMCAreaIceV2InteriorGarage
+  id: RMCAreaIceV2InteriorGarageWesternUnit
+  name: Garage Western Unit
+  components:
+  - type: Sprite
+    state: junkyard2
+
+- type: entity
+  parent: RMCAreaIceV2InteriorGarage
+  id: RMCAreaIceV2InteriorGarageEasternUnit
+  name: Garage Eastern Unit
+  components:
+  - type: Sprite
+    state: junkyard3
+
+- type: entity
+  parent: RMCAreaIceV2InteriorGarage
+  id: RMCAreaIceV2InteriorGarageRepairStation
+  name: Garage Repair Station
+  components:
+  - type: Sprite
+    state: junkyard0
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorAerodrome
+  name: Aerodrome
+  components:
+  - type: Sprite
+    state: hangars3
+
+- type: entity
+  parent: RMCAreaIceV2InteriorAerodrome
+  id: RMCAreaIceV2InteriorAerodromeHangarHallway
+  name: Aerodrome Hangar Hallway
+  components:
+  - type: Sprite
+    state: hangars4
+
+- type: entity
+  parent: RMCAreaIceV2InteriorAerodrome
+  id: RMCAreaIceV2InteriorAerodromeHangarAlpha
+  name: Aerodrome Hangar Alpha
+  components:
+  - type: Sprite
+    state: hangars0
+
+- type: entity
+  parent: RMCAreaIceV2InteriorAerodrome
+  id: RMCAreaIceV2InteriorAerodromeHangarBeta
+  name: Aerodrome Hangar Beta
+  components:
+  - type: Sprite
+    state: hangars1
+
+- type: entity
+  parent: RMCAreaIceV2InteriorAerodrome
+  id: RMCAreaIceV2InteriorAerodromeHangarSecurityCheckpoint
+  name: Aerodrome Hangar Security Checkpoint
+  components:
+  - type: Sprite
+    state: hangars2
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorHydroponics
+  name: Hydroponics
+  components:
+  - type: Sprite
+    state: res4
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorHydroponicsRelaxationModule
+  name: Hydroponics Relaxation Module
+  components:
+  - type: Sprite
+    state: res0
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorHydroponicsNorthWing
+  name: Hydroponics North Wing
+  components:
+  - type: Sprite
+    state: res1
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorHydroponicsSouthWing
+  name: Hydroponics South Wing
+  components:
+  - type: Sprite
+    state: res2
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorMiningOutpost
+  name: Mining Outpost
+  components:
+  - type: Sprite
+    state: junkyard3
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorSurfaceRequesitionWarehouse
+  name: Surface Requesition Warehouse
+  components:
+  - type: Sprite
+    state: barrens4
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorOmicronDome
+  name: Omicron Dome
+  components:
+  - type: Sprite
+    state: res3
+
+- type: entity
+  parent: RMCAreaIceV2InteriorOmicronDome
+  id: RMCAreaIceV2InteriorOmicronDomeTechnicalStorage
+  name: Omicron Dome Technical Storage
+  components:
+  - type: Sprite
+    state: res4
+
+- type: entity
+  parent: RMCAreaIceV2InteriorOmicronDome
+  id: RMCAreaIceV2InteriorOmicronDomeFieldGearStorage
+  name: Omicron Dome Field Gear Storage
+  components:
+  - type: Sprite
+    state: res0
+
+- type: entity
+  parent: RMCAreaIceV2InteriorOmicronDome
+  id: RMCAreaIceV2InteriorOmicronDomeTemporaryStorage
+  name: Omicron Dome Temporary Storage
+  components:
+  - type: Sprite
+    state: res1
+
+- type: entity
+  parent: RMCAreaIceV2Interior
+  id: RMCAreaIceV2InteriorStorageUnit
+  name: Storage Unit
+  components:
+  - type: Sprite
+    state: junkyard2
+
+- type: entity
+  parent: RMCAreaIceV2InteriorStorageUnit
+  id: RMCAreaIceV2InteriorStorageUnitResearch
+  name: Storage Unit Research
+  components:
+  - type: Sprite
+    state: junkyard3
+
+- type: entity
+  parent: RMCAreaIceV2InteriorStorageUnit
+  id: RMCAreaIceV2InteriorStorageUnitTComms
+  name: Storage Unit T-Comms
+  components:
+  - type: Sprite
+    state: junkyard0
+
+- type: entity
+  parent: RMCAreaIceV2InteriorStorageUnit
+  id: RMCAreaIceV2InteriorStorageUnitPower
+  name: Storage Unit Power
+  components:
+  - type: Sprite
+    state: junkyard0
+
+- type: entity
+  parent: RMCAreaIceV2Underground
+  id: RMCAreaIceV2UndergroundCrewArea
+  name: Underground Crew Area
+  components:
+  - type: Sprite
+    state: ice_colony
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundCrewArea
+  id: RMCAreaIceV2UndergroundWestDormitory
+  name: Underground West Dormitory
+  components:
+  - type: Sprite
+    state: barrens0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundCrewArea
+  id: RMCAreaIceV2UndergroundEastDormitory
+  name: Underground East Dormitory
+  components:
+  - type: Sprite
+    state: barrens4
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundCrewArea
+  id: RMCAreaIceV2UndergroundCanteen
+  name: Underground Canteen
+  components:
+  - type: Sprite
+    state: bar4
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundCrewArea
+  id: RMCAreaIceV2UndergroundDisposals
+  name: Underground Disposals
+  components:
+  - type: Sprite
+    state: junkyard0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundCrewArea
+  id: RMCAreaIceV2UndergroundLavatory
+  name: Underground Lavatory
+  components:
+  - type: Sprite
+    state: bar0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundCrewArea
+  id: RMCAreaIceV2UndergroundLeisureArea
+  name: Underground Leisure Area
+  components:
+  - type: Sprite
+    state: barrens2
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundCrewArea
+  id: RMCAreaIceV2UndergroundSportsCenter
+  name: Underground Sports Center
+  components:
+  - type: Sprite
+    state: barrens3
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundCrewArea
+  id: RMCAreaIceV2UndergroundChapel
+  name: Underground Chapel
+  components:
+  - type: Sprite
+    state: hangars0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundCrewArea
+  id: RMCAreaIceV2UndergroundLibrary
+  name: Underground Library
+  components:
+  - type: Sprite
+    state: hangars3
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundCrewArea
+  id: RMCAreaIceV2UndergroundMorgue
+  name: Underground Morgue
+  components:
+  - type: Sprite
+    state: base_ico
+
+- type: entity
+  parent: RMCAreaIceV2Underground
+  id: RMCAreaIceV2UndergroundColonialAdministration
+  name: Underground Colonial Administration
+  components:
+  - type: Sprite
+    state: caves2
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundColonialAdministration
+  id: RMCAreaIceV2UndergroundColonialAdministrationLobby
+  name: Underground Colonial Administration Lobby
+  components:
+  - type: Sprite
+    state: caves3
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundColonialAdministration
+  id: RMCAreaIceV2UndergroundColonialAdministrationCommandCenter
+  name: Underground Colonial Administration Command Center
+  components:
+  - type: Sprite
+    state: caves4
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundColonialAdministration
+  id: RMCAreaIceV2UndergroundColonialAdministrationPrivateOfficeWest
+  name: Underground Colonial Administration Private Office West
+  components:
+  - type: Sprite
+    state: caves0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundColonialAdministration
+  id: RMCAreaIceV2UndergroundColonialAdministrationPrivateOfficeEast
+  name: Underground Colonial Administration Private Office East
+  components:
+  - type: Sprite
+    state: caves1
+
+- type: entity
+  parent: RMCAreaIceV2Underground
+  id: RMCAreaIceV2UndergroundEngineering
+  name: Underground Engineering
+  components:
+  - type: Sprite
+    state: junkyard0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundEngineering
+  id: RMCAreaIceV2UndergroundEngineeringLockerRoom
+  name: Underground Engineering Locker Room
+  components:
+  - type: Sprite
+    state: junkyard1
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundEngineering
+  id: RMCAreaIceV2UndergroundPowerSubstation
+  name: Underground Power Substation
+  components:
+  - type: Sprite
+    state: junkyard2
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundEngineering
+  id: RMCAreaIceV2UndergroundPowerSubstationTechnicalStorage
+  name: Underground Technical Storage
+  components:
+  - type: Sprite
+    state: junkyard3
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundEngineering
+  id: RMCAreaIceV2UndergroundHighSecurityTechnicalStorage
+  name: Underground High Security Technical Storage
+  components:
+  - type: Sprite
+    state: junkyard3
+
+- type: entity
+  parent: RMCAreaIceV2Underground
+  id: RMCAreaIceV2UndergroundHallway
+  name: Underground Hallway
+  components:
+  - type: Sprite
+    state: barrens0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundHallway
+  id: RMCAreaIceV2UndergroundHallwayNW
+  name: Underground Hallway NW
+  components:
+  - type: Sprite
+    state: barrens1
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundHallway
+  id: RMCAreaIceV2UndergroundHallwaySE
+  name: Underground Hallway SE
+  components:
+  - type: Sprite
+    state: barrens2
+
+- type: entity
+  parent: RMCAreaIceV2Underground
+  id: RMCAreaIceV2UndergroundMaintenance
+  name: Underground Maintenance
+  components:
+  - type: Sprite
+    state: barrens1
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundMaintenance
+  id: RMCAreaIceV2UndergroundCentralMaintenance
+  name: Underground Central Maintenance
+  components:
+  - type: Sprite
+    state: barrens2
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundMaintenance
+  id: RMCAreaIceV2UndergroundCentralMaintenanceProject
+  name: Underground Central Maintenance Project
+  components:
+  - type: Sprite
+    state: barrens3
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundMaintenance
+  id: RMCAreaIceV2UndergroundSecurityMaintenance
+  name: Underground Security Maintenance
+  components:
+  - type: Sprite
+    state: barrens4
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundMaintenance
+  id: RMCAreaIceV2UndergroundEngineeringMaintenance
+  name: Underground Engineering Maintenance
+  components:
+  - type: Sprite
+    state: barrens0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundMaintenance
+  id: RMCAreaIceV2UndergroundResearchMaintenance
+  name: Underground Research Maintenance
+  components:
+  - type: Sprite
+    state: barrens1
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundMaintenance
+  id: RMCAreaIceV2UndergroundEasternMaintenance
+  name: Underground Eastern Maintenance
+  components:
+  - type: Sprite
+    state: barrens2
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundMaintenance
+  id: RMCAreaIceV2UndergroundSouthernMaintenance
+  name: Underground Southern Maintenance
+  components:
+  - type: Sprite
+    state: barrens3
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundMaintenance
+  id: RMCAreaIceV2UndergroundNorthernMaintenance
+  name: Underground Northern Maintenance
+  components:
+  - type: Sprite
+    state: barrens4
+
+- type: entity
+  parent: RMCAreaIceV2Underground
+  id: RMCAreaIceV2UndergroundMedicalLaboratory
+  name: Underground Medical Laboratory
+  components:
+  - type: Sprite
+    state: res0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundMedicalLaboratory
+  id: RMCAreaIceV2UndergroundMedicalLaboratoryLobby
+  name: Underground Medical Laboratory Lobby
+  components:
+  - type: Sprite
+    state: res1
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundMedicalLaboratory
+  id: RMCAreaIceV2UndergroundMedicalLaboratoryHallway
+  name: Underground Medical Laboratory Hallway
+  components:
+  - type: Sprite
+    state: res2
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundMedicalLaboratory
+  id: RMCAreaIceV2UndergroundMedicalLaboratoryStorage
+  name: Underground Medical Laboratory Storage
+  components:
+  - type: Sprite
+    state: res3
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundMedicalLaboratory
+  id: RMCAreaIceV2UndergroundMedicalLaboratoryTreatment
+  name: Underground Medical Laboratory Treatment
+  components:
+  - type: Sprite
+    state: res4
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundMedicalLaboratory
+  id: RMCAreaIceV2UndergroundMedicalLaboratoryOperatingRoom
+  name: Underground Medical Laboratory Operating Room
+  components:
+  - type: Sprite
+    state: res0
+
+- type: entity
+  parent: RMCAreaIceV2Underground
+  id: RMCAreaIceV2UndergroundReception
+  name: Underground Reception
+  components:
+  - type: Sprite
+    state: bar4
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundReception
+  id: RMCAreaIceV2UndergroundReceptionNorthernSecurityCheckpoint
+  name: Underground Reception Northern Security Checkpoint
+  components:
+  - type: Sprite
+    state: bar0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundReception
+  id: RMCAreaIceV2UndergroundReceptionSouthernSecurityCheckpoint
+  name: Underground Reception Southern Security Checkpoint
+  components:
+  - type: Sprite
+    state: bar1
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundReception
+  id: RMCAreaIceV2UndergroundReceptionMensRestroom
+  name: Underground Reception Mens Restroom
+  components:
+  - type: Sprite
+    state: bar2
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundReception
+  id: RMCAreaIceV2UndergroundReceptionWomensRestroom
+  name: Underground Reception Womens Restroom
+  components:
+  - type: Sprite
+    state: bar3
+
+- type: entity
+  parent: RMCAreaIceV2Underground
+  id: RMCAreaIceV2UndergroundRequisitions
+  name: Underground Requisitions
+  components:
+  - type: Sprite
+    state: hangars3
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundRequisitions
+  id: RMCAreaIceV2UndergroundRequisitionsLobby
+  name: Underground Requisitions Lobby
+  components:
+  - type: Sprite
+    state: hangars4
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundRequisitions
+  id: RMCAreaIceV2UndergroundRequisitionsStorage
+  name: Underground Requisitions Storage
+  components:
+  - type: Sprite
+    state: hangars0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundRequisitions
+  id: RMCAreaIceV2UndergroundRequisitionsSecureStorage
+  name: Underground Requisitions Secure Storage
+  components:
+  - type: Sprite
+    state: hangars1
+
+- type: entity
+  parent: RMCAreaIceV2Underground
+  id: RMCAreaIceV2UndergroundThetaVResearchLaboratory
+  name: Theta V Research Laboratory
+  components:
+  - type: Sprite
+    state: res2
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundThetaVResearchLaboratory
+  id: RMCAreaIceV2UndergroundThetaVResearchLaboratoryWorkStation
+  name: Theta V Research Laboratory Work Station
+  components:
+  - type: Sprite
+    state: res3
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundThetaVResearchLaboratory
+  id: RMCAreaIceV2UndergroundThetaVResearchLaboratoryStorage
+  name: Theta V Research Laboratory Storage
+  components:
+  - type: Sprite
+    state: res4
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundThetaVResearchLaboratory
+  id: RMCAreaIceV2UndergroundThetaVResearchLaboratorySampleIsolation
+  name: Theta V Research Laboratory Sample Isolation
+  components:
+  - type: Sprite
+    state: res0
+
+- type: entity
+  parent: RMCAreaIceV2Underground
+  id: RMCAreaIceV2UndergroundSecurityCenter
+  name: Underground Security Center
+  components:
+  - type: Sprite
+    state: caves4
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundSecurityCenter
+  id: RMCAreaIceV2UndergroundMarshalsOffice
+  name: Marshals Office
+  components:
+  - type: Sprite
+    state: caves0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundSecurityCenter
+  id: RMCAreaIceV2UndergroundDetectivesOffice
+  name: Detectives Office
+  components:
+  - type: Sprite
+    state: caves1
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundSecurityCenter
+  id: RMCAreaIceV2UndergroundInterrogationOffice
+  name: Interrogation Office
+  components:
+  - type: Sprite
+    state: caves2
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundSecurityCenter
+  id: RMCAreaIceV2UndergroundSecurityCenterCustodialCloset
+  name: Underground Security Center Custodial Closet
+  components:
+  - type: Sprite
+    state: caves3
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundSecurityCenter
+  id: RMCAreaIceV2UndergroundSecurityCenterHallway
+  name: Underground Security Center Hallway
+  components:
+  - type: Sprite
+    state: caves4
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundSecurityCenter
+  id: RMCAreaIceV2UndergroundSecurityCenterArmory
+  name: Underground Security Center Armory
+  components:
+  - type: Sprite
+    state: caves0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundSecurityCenter
+  id: RMCAreaIceV2UndergroundSecurityCenterBrig
+  name: Underground Security Center Brig
+  components:
+  - type: Sprite
+    state: caves1
+
+- type: entity
+  parent: RMCAreaIceV2Underground
+  id: RMCAreaIceV2UndergroundCaves
+  name: Underground Caves
+  components:
+  - type: Sprite
+    state: caves4
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundCaves
+  id: RMCAreaIceV2UndergroundCavesMining
+  name: Underground Mining Tunnels
+  components:
+  - type: Sprite
+    state: caves0
+
+- type: entity
+  parent: RMCAreaIceV2UndergroundCaves
+  id: RMCAreaIceV2UndergroundCavesShipDig
+  name: Underground Ship Dig
+  components:
+  - type: Sprite
+    state: caves2
+
+- type: entity
+  parent: RMCAreaIceV2Underground
+  id: RMCAreaIceV2Elevators
+  name: Elevators
+
+- type: entity
+  parent: RMCAreaIceV2Elevators
+  id: RMCAreaIceV2Elevator1
+  name: Elevator I
+
+- type: entity
+  parent: RMCAreaIceV2Elevators
+  id: RMCAreaIceV2Elevator2
+  name: Elevator II
+
+- type: entity
+  parent: RMCAreaIceV2Elevators
+  id: RMCAreaIceV2Elevator3
+  name: Elevator III
+
+- type: entity
+  parent: RMCAreaIceV2Elevators
+  id: RMCAreaIceV2Elevator4
+  name: Elevator IV

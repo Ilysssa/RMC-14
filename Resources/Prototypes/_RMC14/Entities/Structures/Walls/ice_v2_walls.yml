@@ -1,0 +1,258 @@
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallIcecolonyv2ThickIceSingle
+  name: dense ice wall
+  description: It is very thick.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/icewall.rsi
+    state: single
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/icewall.rsi
+    state: single
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmack
+  - type: InteractionPopup
+    interactDelay: 10
+    interactSuccessString: comp-window-knock
+    messagePerceivedByOthers: rmc-window-knock-others
+    interactSuccessSound:
+      path: /Audio/Effects/glass_knock.ogg
+      params:
+        variation: 0.125
+
+- type: entity
+  parent: RMCWallIcecolonyv2ThickIceSingle
+  id: RMCWallIcecolonyv2ThickIceCorners
+  suffix: corner
+  components:
+  - type: Sprite
+    state: corner
+  - type: Icon
+    state: corner
+
+- type: entity
+  parent: RMCWallIcecolonyv2ThickIceSingle
+  id: RMCWallIcecolonyv2ThickIceStraight
+  suffix: straight
+  components:
+  - type: Sprite
+    state: straight
+  - type: Icon
+    state: straight
+
+- type: entity
+  parent: RMCWallIcecolonyv2ThickIceSingle
+  id: RMCWallIcecolonyv2ThickIceIntersection
+  suffix: intersection
+  components:
+  - type: Sprite
+    state: intersection
+  - type: Icon
+    state: intersection
+
+- type: entity
+  parent: RMCWallIcecolonyv2ThickIceSingle
+  id: RMCWallIcecolonyv2ThickIceTjunction
+  suffix: t-junction
+  components:
+  - type: Sprite
+    state: t_junction
+  - type: Icon
+    state: t_junction
+
+- type: entity
+  parent: RMCWallIcecolonyv2ThickIceSingle
+  id: RMCWallIcecolonyv2ThickIceEnd
+  suffix: end
+  components:
+  - type: Sprite
+    state: end
+  - type: Icon
+    state: end
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallIcecolonyv2RockwallSingle
+  name: icy rock
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/rockwall.rsi
+    state: single
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/rockwall.rsi
+    state: single
+
+- type: entity
+  parent: RMCWallIcecolonyv2RockwallSingle
+  id: RMCWallIcecolonyv2RockwallNorthWall
+  suffix: north wall
+  components:
+  - type: Sprite
+    state: northw_0
+  - type: Icon
+    state: northw_0
+  - type: RandomSprite
+    available:
+    - 0:
+        northw_0: ""
+        northw_1: ""
+        northw_2: ""
+        northw_3: ""
+
+- type: entity
+  parent: RMCWallIcecolonyv2RockwallSingle
+  id: RMCWallIcecolonyv2RockwallEastWall
+  suffix: east wall
+  components:
+  - type: Sprite
+    state: eastw_0
+  - type: Icon
+    state: eastw_0
+  - type: RandomSprite
+    available:
+    - 0:
+        eastw_0: ""
+        eastw_1: ""
+        eastw_2: ""
+        eastw_3: ""
+
+- type: entity
+  parent: RMCWallIcecolonyv2RockwallSingle
+  id: RMCWallIcecolonyv2RockwallWestWall
+  suffix: west wall
+  components:
+  - type: Sprite
+    state: westw_0
+  - type: Icon
+    state: westw_0
+  - type: RandomSprite
+    available:
+    - 0:
+        westw_0: ""
+        westw_1: ""
+        westw_2: ""
+        westw_3: ""
+
+- type: entity
+  parent: RMCWallIcecolonyv2RockwallSingle
+  id: RMCWallIcecolonyv2RockwallSouthWall
+  suffix: south wall
+  components:
+  - type: Sprite
+    state: southw_0
+  - type: Icon
+    state: southw_0
+  - type: RandomSprite
+    available:
+    - 0:
+        southw_0: ""
+        southw_1: ""
+        southw_2: ""
+        southw_3: ""
+
+- type: entity
+  parent: RMCWallIcecolonyv2RockwallSingle
+  id: RMCWallIcecolonyv2RockwallBackground
+  suffix: background
+  components:
+  - type: Sprite
+    state: backgroundw_0
+  - type: Icon
+    state: backgroundw_0
+  - type: RandomSprite
+    available:
+    - 0:
+        backgroundw_0: ""
+        backgroundw_1: ""
+        backgroundw_2: ""
+        backgroundw_3: ""
+
+- type: entity
+  parent: RMCWallIcecolonyv2RockwallSingle
+  id: RMCWallIcecolonyv2RockwallOutsideCorners
+  suffix: corners
+  components:
+  - type: Sprite
+    state: corners
+  - type: Icon
+    state: corners
+
+- type: entity
+  parent: RMCWallIcecolonyv2RockwallSingle
+  id: RMCWallIcecolonyv2RockwallAngled
+  suffix: angled
+  components:
+  - type: Sprite
+    state: angled
+  - type: Icon
+    state: angled
+
+- type: entity
+  parent: RMCWallIcecolonyv2RockwallSingle
+  id: RMCWallIcecolonyv2RockwallStraight
+  suffix: straight
+  components:
+  - type: Sprite
+    state: straight
+  - type: Icon
+    state: straight
+
+- type: entity
+  parent: RMCWallIcecolonyv2RockwallSingle
+  id: RMCWallIcecolonyv2RockwallCornerOverlay
+  suffix: corner overlay
+  components:
+  - type: PlacementReplacement
+    key: ""
+  - type: Sprite
+    state: corner_overlay
+    drawdepth: WallTops
+  - type: Icon
+    state: corner_overlay
+
+- type: entity
+  parent: RMCWallIcecolonyv2RockwallSingle
+  id: RMCWallIcecolonyv2RockwallCornerOverlayTest
+  suffix: corner overlay test
+  components:
+  - type: PlacementReplacement
+    key: ""
+  - type: Sprite
+    state: corner_overlay_test
+    drawdepth: WallTops
+    directional: false
+  - type: Icon
+    state: corner_overlay_test
+
+- type: entity
+  parent: RMCWallIcecolonyv2RockwallSingle
+  id: RMCWallIcecolonyv2RockwallIntersection
+  suffix: 4-way
+  components:
+  - type: Sprite
+    state: 4-way
+  - type: Icon
+    state: 4-way
+
+- type: entity
+  parent: RMCWallIcecolonyv2RockwallSingle
+  id: RMCWallIcecolonyv2RockwallTjunction
+  suffix: t-shape
+  components:
+  - type: Sprite
+    state: tshape
+  - type: Icon
+    state: tshape
+
+- type: entity
+  parent: RMCWallIcecolonyv2RockwallSingle
+  id: RMCWallIcecolonyv2RockwallEnds
+  suffix: ends
+  components:
+  - type: Sprite
+    state: ends
+  - type: Icon
+    state: ends

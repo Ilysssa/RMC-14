@@ -1,0 +1,65 @@
+- type: entity
+  parent: CMBaseWindow
+  id: RMCWindowIcecolonyv2ThinIceSingle
+  name: thin ice wall
+  description: It is very thin.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Windows/icewalllight.rsi
+    state: single
+  - type: Icon
+    sprite: _RMC14/Structures/Windows/icewalllight.rsi
+    state: single
+  - type: RMCWallExplosionDeletable
+  - type: DestroyedByExplosionType
+
+- type: entity
+  parent: RMCWindowIcecolonyv2ThinIceSingle
+  id: RMCWallIcecolonyv2ThinIceCorner
+  name: thin ice wall
+  suffix: corner
+  components:
+  - type: Sprite
+    state: corner
+  - type: Icon
+    state: corner
+
+- type: entity
+  parent: RMCWindowIcecolonyv2ThinIceSingle
+  id: RMCWallIcecolonyv2ThinIceEnd
+  suffix: end
+  components:
+  - type: Sprite
+    state: end
+  - type: Icon
+    state: end
+
+- type: entity
+  parent: RMCWindowIcecolonyv2ThinIceSingle
+  id: RMCWallIcecolonyv2ThinIceIntersection
+  suffix: intersection
+  components:
+  - type: Sprite
+    state: intersection
+  - type: Icon
+    state: intersection
+
+- type: entity
+  parent: RMCWindowIcecolonyv2ThinIceSingle
+  id: RMCWallIcecolonyv2ThinIceStraight
+  suffix: straight
+  components:
+  - type: Sprite
+    state: straight
+  - type: Icon
+    state: straight
+
+- type: entity
+  parent: RMCWindowIcecolonyv2ThinIceSingle
+  id: RMCWallIcecolonyv2ThinIceTjunction
+  suffix: T-junction
+  components:
+  - type: Sprite
+    state: t_junction
+  - type: Icon
+    state: t_junction

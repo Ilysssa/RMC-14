@@ -1,0 +1,36 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from cmss13 at https://github.com/cmss13-devs/cmss13/blob/7d096e84864542952a2bb12487fd1327bd7e5bbb/heads/master/icons/turf/walls/icewall.dmi, original commit (https://github.com/cmss13-devs/cmss13/commit/7eefbf61e795dc910c81c8628a3765e41cec6fea) credits @Fridge for these sprites.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "blank"
+        },
+        {
+            "name": "single"
+        },
+        {
+            "name": "end",
+            "directions": 4
+        },
+        {
+            "name": "straight",
+            "directions": 4
+        },
+        {
+            "name": "corner",
+            "directions": 4
+        },
+        {
+            "name": "t_junction",
+            "directions": 4
+        },
+        {
+            "name": "intersection"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+- type: entity
+  id: RMCElevatorButton
+  name: button
+  description: A remote control-switch for an elevator.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wallmount
+  components:
+  - type: Physics
+    bodyType: Static
+    canCollide: false
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: _RMC14/Structures/Machines/computer.rsi
+    layers:
+    - state: elevator_screen
+      map: [ "enum.RMCPodDoorButtonLayers.Animation" ]
+    - state: elevator_screen0
+      visible: false
+      map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+  - type: Clickable
+  - type: InteractionOutline
+  - type: WallMount
+    arc: 360
+  - type: RMCDoorButton
+    deniedState: elevator_screen0
+    offState: elevator_screen
+    onState: elevator_screen_animated
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: false }
+          False: { visible: true }
+  - type: ApcPowerReceiver
+  - type: RMCPowerReceiver
+    idleLoad: 2
+    activeLoad: 4
+    channel: Environment
+  - type: RMCMesonsNonviewable

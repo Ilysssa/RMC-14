@@ -44,6 +44,7 @@
   - RMCAccessDatabase
   - RMCAccessSeniorCommand
   - CMAccessXO # executive officer
+  - CMAccessIO # Intelligence Officer
 
 - type: accessGroup
   id: CO
@@ -91,6 +92,7 @@
   - RMCAccessDatabase
   - RMCAccessSeniorCommand
   - CMAccessXO # executive officer
+  - CMAccessIO # Intelligence Officer
 
 # all ship-side access that is not CO
 # SEA uses this.
@@ -137,6 +139,7 @@
   - RMCAccessDatabase
   - RMCAccessSeniorCommand
   - CMAccessXO
+  - CMAccessIO
 
 - type: accessGroup
   id: SEA
@@ -180,6 +183,7 @@
   - RMCAccessDatabase
   - RMCAccessSeniorCommand
   - CMAccessXO
+  - CMAccessIO
 
 - type: accessGroup
   id: SO

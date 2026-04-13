@@ -41,13 +41,13 @@ public sealed class RMCLightOffsetSystem : EntitySystem
                 _sprite.SetOffset(ent, new Vector2(0.45f, -0.32f));
                 break;
             case Direction.East:
-                _sprite.SetOffset(ent, new Vector2(0.7f, -1.45f));
+                _sprite.SetOffset(ent, new Vector2(0.5f, -1.45f));
                 break;
             case Direction.North:
                 _sprite.SetOffset(ent, new Vector2(-0.5f, -1.5f));
                 break;
             case Direction.West:
-                _sprite.SetOffset(ent, new Vector2(-0.7f, -0.4f));
+                _sprite.SetOffset(ent, new Vector2(-0.5f, -0.4f));
                 break;
         }
 

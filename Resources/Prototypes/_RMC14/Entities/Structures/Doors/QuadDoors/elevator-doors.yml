@@ -3,6 +3,9 @@
   id: RMCQuadDoorElevatorSolid
   suffix: Solid
   components:
+  - type: Airlock
+    openingPanelSpriteState: o_door_opening
+    closingPanelSpriteState: o_door_closing
   - type: Door
     openSpriteState: door_open
     closedSpriteState: door_closed
@@ -18,10 +21,11 @@
     openTimeTwo: 0.9
     openingAnimationTime: 2
     closingAnimationTime: 2
+    openDrawDepth: 0
   - type: Occluder
     boundingBox: "-0.5,-0.5,3.5,0.5"
   - type: Sprite
-    #noRot: true
+    noRot: true
     sprite: _RMC14/Structures/Doors/Airlocks/QuadDoor/4x1_elevator.rsi
     layers:
     - state: door_closed
@@ -41,46 +45,47 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
       visible: false
 
-# TODO: Add sprite for glass variant
-#- type: entity
-#  parent: RMCQuadDoorBaseInvincible
-#  id: RMCQuadDoorElevatorGlass
-#  suffix: Glass
-#  components:
-#  - type: Door
-#    openSpriteState: door_open
-#    closedSpriteState: door_closed
-#    denySpriteState: door_deny
-#    openingSpriteState: door_opening
-#    closingSpriteState: door_closing
-#    emaggingSpriteState: unlit
-#    canCrush: false
-#    performCollisionCheck: true
-#    closeTimeOne: 1.3
-#    closeTimeTwo: 0.6
-#    openTimeOne: 1.3
-#    openTimeTwo: 0.6
-#    openingAnimationTime: 1.9
-#    closingAnimationTime: 1.9
-#  - type: Sprite
-#    #noRot: true
-#    sprite: _RMC14/Structures/Doors/Airlocks/QuadDoor/4x1_elevator_access.rsi
-#    layers:
-#    - state: door_closed
-#      map: [ "enum.DoorVisualLayers.Base" ]
-#    - state: unlit
-#      map: ["enum.DoorVisualLayers.BaseUnlit"]
-#    - state: welded
-#      map: [ "enum.WeldableLayers.BaseWelded" ]
-#      visible: false
-#    - state: door_locked
-#      shader: unshaded
-#      map: ["enum.DoorVisualLayers.BaseBolted"]
-#    - state: door_spark
-#      shader: unshaded
-#      map: ["enum.DoorVisualLayers.BaseEmergencyAccess"]
-#    - state: panel_open
-#      map: ["enum.WiresVisualLayers.MaintenancePanel"]
-#      visible: false
-
-
+- type: entity
+  parent: RMCQuadDoorBaseInvincible
+  id: RMCQuadDoorElevatorGlass
+  suffix: Glass
+  components:
+  - type: Airlock
+    openingPanelSpriteState: o_door_opening
+    closingPanelSpriteState: o_door_closing
+    openPanelVisible: true
+  - type: Door
+    openSpriteState: door_open
+    closedSpriteState: door_closed
+    denySpriteState: door_deny
+    openingSpriteState: door_opening
+    closingSpriteState: door_closing
+    emaggingSpriteState: unlit
+    canCrush: false
+    performCollisionCheck: true
+    closeTimeOne: 1.1
+    closeTimeTwo: 0.9
+    openTimeOne: 1.1
+    openTimeTwo: 0.9
+    openingAnimationTime: 2
+    closingAnimationTime: 2
+  - type: Sprite
+    noRot: true
+    sprite: _RMC14/Structures/Doors/Airlocks/QuadDoor/4x1_elevator_access.rsi
+    layers:
+    - state: door_closed
+      map: [ "enum.DoorVisualLayers.Base" ]
+    - state: unlit
+      map: ["enum.DoorVisualLayers.BaseUnlit"]
+    - state: welded
+      map: [ "enum.WeldableLayers.BaseWelded" ]
+      visible: false
+    - state: door_locked
+      shader: unshaded
+      map: ["enum.DoorVisualLayers.BaseBolted"]
+    - state: door_spark
+      shader: unshaded
+      map: ["enum.DoorVisualLayers.BaseEmergencyAccess"]
+    - state: panel_open
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+      visible: false

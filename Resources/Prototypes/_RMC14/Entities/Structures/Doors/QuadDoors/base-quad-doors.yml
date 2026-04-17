@@ -16,6 +16,44 @@
         - FullTileMask
         layer:
         - FullTileLayer
+  - type: Corrodible
+    isCorrodible: false
+    structure: true
+  - type: Weldable
+    time: 3
+  - type: WiresVisuals
+  - type: ExtensionCableReceiver
+  - type: Electrified
+    enabled: false
+    usesApcPower: true
+  - type: WiresPanel
+  - type: WiresPanelSecurity
+  - type: Wires
+    boardName: wires-board-name-airlock
+    layoutId: Airlock
+  - type: DoorSignalControl
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+    - Open
+    - Close
+    - Toggle
+    - AutoClose
+    - DoorBolt
+  - type: DeviceLinkSource
+    ports:
+    - DoorStatus
+  - type: SoundOnOverload
+  - type: SpawnOnOverload
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path:
+          "/Audio/Weapons/smash.ogg"
 
 - type: entity
   abstract: true
@@ -38,3 +76,6 @@
         - FullTileMask
         layer:
         - FullTileLayer
+  - type: Corrodible
+    isCorrodible: false
+    structure: true
